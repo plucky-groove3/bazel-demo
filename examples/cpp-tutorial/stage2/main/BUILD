@@ -3,6 +3,7 @@ load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 cc_library(
     name = "hello-greet",
     srcs = ["hello-greet.cc"],
+    data = ["//main/json:hello.json"],
     hdrs = ["hello-greet.h"],
 )
 
